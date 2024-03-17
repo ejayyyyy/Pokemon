@@ -12,7 +12,7 @@ const PokemonCard = ({ pokemon, toggleCard }) => {
     return (
         <>
             <div
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[11]"
+                className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[11]"
             >
                 <div
                     className="bg-pokemon-white-100 shadow-2xl px-10 py-14 rounded-2xl w-[350px] md:w-[500px] relative"
@@ -71,7 +71,7 @@ const PokemonCard = ({ pokemon, toggleCard }) => {
                 </div>
             </div>
 
-            <div className="absolute top-0 w-full z-[10] left-0 h-[100vh] bg-black opacity-50"></div>
+            <div className="fixed  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full z-[10] h-[100vh] bg-black opacity-50"></div>
         </>
     );
 }
