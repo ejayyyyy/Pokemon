@@ -47,8 +47,11 @@ const PokemonCard = ({ pokemon, toggleCard }) => {
                                         className="font-semibold"
                                     >{ pokemon.maxHP }</span>
                                 </p>
-                                <div className="bg-white h-3 w-full mb-2">
-                                    <div className={`bg-pokemon-green-200 h-full w-[${ healthBarWidth }%]`}></div>
+                                <div className="bg-white h-3 w-full mb-2 rounded-md">
+                                    <div
+                                        className={`bg-pokemon-green-200 h-full rounded-md`}
+                                        style={{ width: healthBarWidth + '%' }}
+                                    ></div>
                                 </div>
                             </div>
 
@@ -61,8 +64,11 @@ const PokemonCard = ({ pokemon, toggleCard }) => {
                                     >{ pokemon.maxCP }</span>
                                 </p>
 
-                                <div className="bg-white h-3 mb-2">
-                                    <div className={`bg-pokemon-yellow-200 h-full w-[${combatBarWidth}%]`}></div>
+                                <div className="bg-white h-3 mb-2 rounded-md">
+                                    <div
+                                        className={`bg-pokemon-yellow-200 h-full rounded-md`}
+                                        style={{ width: combatBarWidth + '%' }}
+                                    ></div>
                                 </div>
                             </div>
                         </div>
