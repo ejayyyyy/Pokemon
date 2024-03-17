@@ -1,0 +1,20 @@
+export const TYPES = [
+    'BUG',
+    'Dark',
+    'Dragon',
+    'Electric',
+    'Normal',
+    'Rock',
+    'Fairy',
+    'Fighting',
+    'Fire',
+    'Flying',
+    'Poison',
+    'Steel',
+    'Ghost',
+    'Glass',
+    'Ground',
+    'Ice',
+    'Psychic',
+    'Water'
+]
