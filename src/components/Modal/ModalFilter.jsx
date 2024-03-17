@@ -5,7 +5,7 @@ const ModalFilter = ({ toggleFilter, selectedTypes, handleTypeChange }) => {
     return (
         <>
             <div
-                className="absolute w-full flex flex-col rounded-b-3xl p-10 gap-8 z-20 bg-gradient-to-t from-pokemon-yellow-300 via-pokemon-yellow-200 to-pokemon-yellow-100"
+                className="fixed w-full flex flex-col rounded-b-3xl p-10 gap-8 z-20 bg-gradient-to-t from-pokemon-yellow-300 via-pokemon-yellow-200 to-pokemon-yellow-100"
             >
                 <IoClose
                     className="absolute top-[15px] right-[40px] text-5xl text-pokemon-black-100 font-medium cursor-pointer"
@@ -40,7 +40,7 @@ const ModalFilter = ({ toggleFilter, selectedTypes, handleTypeChange }) => {
                 </div>
             </div>
 
-            <div className="absolute top-0 w-full z-[1] h-[100vh] bg-black opacity-50"></div>
+            <div className="fixed top-0 w-full z-[1] h-[100vh] bg-black opacity-50"></div>
         </>
     );
 }
